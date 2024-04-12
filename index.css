@@ -18,46 +18,11 @@ body {
 .login-container {
     max-width: 500px;
     width: 100%;
-    background-color: #fff;
+    background-color: #F08080; /* New background color for the form */
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     padding: 60px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.login-container::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(60deg, #f79533, #f37055, #e15b64);
-    animation: rotate 6s linear infinite;
-    transform-origin: bottom right;
-}
-
-.login-container::after {
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(60deg, #f79533, #f37055, #e15b64);
-    animation: rotate 6s linear infinite;
-    transform-origin: bottom right;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .logo img {
@@ -77,6 +42,7 @@ h1 {
 
 /* Form Styles */
 form {
+    background-color: #F08080;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -108,9 +74,7 @@ input {
     background-color: #f2f2f2;
     outline: none;
     transition: background-color 0.3s ease;
-    animation: pulse 1.5s ease-in-out infinite alternate;
 }
-
 
 button {
     background: linear-gradient(45deg, #7b4397, #dc2430);
